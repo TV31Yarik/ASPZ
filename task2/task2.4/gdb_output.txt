@@ -1,0 +1,19 @@
+Reading symbols from ./stacker...
+Attaching to program: /media/sf_TASKS/task2/stacker, process 3028
+Reading symbols from /lib/x86_64-linux-gnu/libc.so.6...
+Reading symbols from /usr/lib/debug/.build-id/42/c84c92e6f98126b3e2230ebfdead22c235b667.debug...
+Reading symbols from /lib64/ld-linux-x86-64.so.2...
+Reading symbols from /usr/lib/debug/.build-id/1c/8db5f83bba514f8fd5f1fb6d7be975be1bb855.debug...
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+0x000074295d2fa3d4 in __libc_pause ()
+    at ../sysdeps/unix/sysv/linux/pause.c:29
+#0  0x000074295d2fa3d4 in __libc_pause ()
+    at ../sysdeps/unix/sysv/linux/pause.c:29
+#1  0x000063104ebc9224 in bar_is_now_closed () at main.c:12
+#2  0x000063104ebc9287 in bar () at main.c:18
+#3  0x000063104ebc92ea in foo () at main.c:24
+#4  0x000063104ebc9354 in main (argc=1, argv=0x7fff3279ef58)
+    at main.c:30
+Detaching from program: /media/sf_TASKS/task2/stacker, process 3028
+[Inferior 1 (process 3028) detached]
