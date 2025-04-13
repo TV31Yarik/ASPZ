@@ -14,7 +14,7 @@ gcc -Wall -Wextra -pthread main.c module1.c module2.c -o threaded_program
 Для компіляції багатофайлової програми з підтримкою `pthread` використовується опція `-pthread`: gcc -Wall -Wextra -pthread main.c module1.c module2.c -o threaded_program
 
 ### 2. Використання OpenMP
-Щоб використовувати OpenMP, у код вставляється директива #pragma omp parallel 
+Щоб використовувати OpenMP, у код вставляється директива #pragma omp parallel   
 [Код](task1/omp_version/main.c)
 ![](task1/omp_version/Screenshot%20from%202025-04-09%2017-59-54.png)
 
