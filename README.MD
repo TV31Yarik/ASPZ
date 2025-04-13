@@ -14,12 +14,12 @@ gcc -Wall -Wextra -pthread main.c module1.c module2.c -o threaded_program
 Для компіляції багатофайлової програми з підтримкою `pthread` використовується опція `-pthread`: gcc -Wall -Wextra -pthread main.c module1.c module2.c -o threaded_program
 
 ### 2. Використання OpenMP
-Щоб використовувати OpenMP, у код вставляється директива #pragma omp parallel   
-[Код](task1/omp_version/main.c)
+Щоб використовувати OpenMP, у код вставляється директива #pragma omp parallel <br>
+[Код](task1/omp_version/main.c) <br>
 ![](task1/omp_version/Screenshot%20from%202025-04-09%2017-59-54.png)
 
 ### 3. Використання gprof
-![Результат](task1/omp_version/Screenshot%20from%202025-04-09%2018-02-00.png) 
+![Результат](task1/omp_version/Screenshot%20from%202025-04-09%2018-02-00.png)<br> 
 [report.txt](task1/omp_version/report.txt)
 
 ### 4. Оптимізація 
@@ -29,10 +29,10 @@ OpenMP вже сам по собі додає оптимізацію тому н
 ### 5. Асинхронний ввід/вивід
 Для реалізації асинхронного введення/виведення в програмі ми використали бібліотеку aio.h 
 яка дозволяє виконувати операції читання та запису у фоновому режимі(без блокування основного потоку) 
-![Компіляція](task1/async_io/Screenshot%20from%202025-04-09%2018-09-43.png) 
+![Компіляція](task1/async_io/Screenshot%20from%202025-04-09%2018-09-43.png) <br>
 [результат1](task1/async_io/module1_output.txt)
 [результат2](task1/async_io/module2_output.txt)
 
 ### 6. Реалізація на C++
-[main.cpp](task1/cpp_version/main.cpp) 
+[main.cpp](task1/cpp_version/main.cpp) <br>
 ![Результат](task1/cpp_version/Screenshot%20from%202025-04-09%2018-05-12.png)
